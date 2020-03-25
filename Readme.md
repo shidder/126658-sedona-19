@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Валерия](https://up.htmlacademy.ru/adaptive/19/user/126658).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Вашкевич](https://htmlacademy.ru/profile/id116959).
 
 ---
 
