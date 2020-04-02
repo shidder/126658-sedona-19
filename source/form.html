@@ -30,28 +30,81 @@
     </nav>
   </header>
   <main>
+    <div class="main-bg">
+      <img class="main-bg__image" src="https://via.placeholder.com/150x150">
+    </div>
+    <section class="feedback">
+      <h3 class="feedback__title">Оставьте свой отзыв</h3>
+      <p class="feedback__desc">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+        достопримечательностях</p>
+      <form class="feedback__form form">
+        <fieldset class="form__fieldset fieldset-name">
+          <legend class="fieldset-name__legend">Представьтесь:</legend>
+          <label class="fieldset-name__label">Имя*:</label>
+          <input class="fieldset-name__input" type="text" id="name" value="Петр">
+          <label class="fieldset-name__label">Фамилия*:</label>
+          <input class="fieldset-name__input" type="text" id="surname" value="Иванов">
+          <label class="fieldset-name__label">Отчество:</label>
+          <input class="fieldset-name__input" type="text" id="fathername" value="Александрович">
+        </fieldset>
+        <fieldset class="form__fieldset fieldset-contacts">
+          <legend class="fieldset-contacts__legend">Контактная информация:</legend>
+          <label class="fieldset-contacts__label">Контактный телефон*:</label>
+          <input class="fieldset-contacts__input" type="text" id="name" value="Введите телефон">
+          <label class="fieldset-contacts__label">Электронная почта*:</label>
+          <input class="fieldset-contacts__input" type="text" id="surname" value="Введите e-mail">
+        </fieldset>
+        <fieldset class="form__fieldset fieldset-impress">
+          <legend class="fieldset-impress__legend">Ваше общее впечатление:</legend>
+          <input class="fieldset-impress__input" type="radio" id="positive" checked>
+          <label class="fieldset-impress__label">Скорее положительное</label>
+          <input class="fieldset-impress__input" type="radio" id="negative">
+          <label class="fieldset-impress__label">Скорее отрицательное</label>
+          <input class="fieldset-impress__input" type="radio" id="none">
+          <label class="fieldset-impress__label">Затрудняюсь ответить</label>
+        </fieldset>
+        <fieldset class="form__fieldset fieldset-places">
+          <legend class="fieldset-places__legend">Посещенные достопримечательности:</legend>
+          <input class="fieldset-places__input" type="checkbox" id="bridge" checked>
+          <label class="fieldset-places__label">Мост Дьявола</label>
+          <input class="fieldset-places__input" type="checkbox" id="mountain" checked>
+          <label class="fieldset-places__label">Гора-Колокол</label>
+          <input class="fieldset-places__input" type="checkbox" id="park" checked>
+          <label class="fieldset-places__label">Слайд-Парк</label>
+          <input class="fieldset-places__input" type="checkbox" id="hills">
+          <label class="fieldset-places__label">Красные Скалы</label>
+        </fieldset>
+        <fieldset class="form__fieldset fieldset-comment">
+          <legend class="fieldset-comment__legend">Опишите свои эмоции:</legend>
+          <textarea class="fieldset-comment__textarea" name="comment"
+            placeholder="Опишите подробно все свои восторги"></textarea>
+        </fieldset>
+        <button class="form__btn" type="submit">Отправить отзыв</button>
+      </form>
+    </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-    <div class="hashtag">
-      <p class="hashtag__text">#visitSEDONA</p>
+      <div class="hashtag">
+        <p class="hashtag__text">#visitSEDONA</p>
+      </div>
+      <ul class="socials-list">
+        <li class="socials-list__item">
+          <a href="https://twitter.com/" aria-label="Наш твиттер">Твиттер</a>
+        </li>
+        <li class="socials-list__item">
+          <a href="https://facebook.com/" aria-label="Наш фейсбук">Фейсбук</a>
+        </li>
+        <li class="socials-list__item">
+          <a href="https://youtube.com/" aria-label="Наш ютуб">Ютуб</a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на интенсив">HTML
+          Academy</a>
+      </div>
     </div>
-    <ul class="socials-list">
-      <li class="socials-list__item">
-        <a href="https://twitter.com/" aria-label="Наш твиттер">Твиттер</a>
-      </li>
-      <li class="socials-list__item">
-        <a href="https://facebook.com/" aria-label="Наш фейсбук">Фейсбук</a>
-      </li>
-      <li class="socials-list__item">
-        <a href="https://youtube.com/" aria-label="Наш ютуб">Ютуб</a>
-      </li>
-    </ul>
-    <div class="copyright">
-      <p class="copyright__text">Разработано</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на интенсив">HTML Academy</a>
-    </div>
-  </div>
   </footer>
 </body>
 </html>
