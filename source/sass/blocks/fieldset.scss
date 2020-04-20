@@ -26,9 +26,25 @@
 
 .fieldset__legend {
   font-weight: 700;
+  font-size: 18px;
+
 }
 
-.fieldset__label,
-.Fieldset__input {
+.fieldset__input,
+.fieldset__wrapper--impress .fieldset__label,
+.fieldset__wrapper--places .fieldset__label,
+.fieldset__textarea {
   text-transform: none;
-}
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  font-family:inherit;
+  }
+
+  .fieldset__label {
+    line-height: 26px;
+  }
+
+  .fieldset__textarea::placeholder {
+    color: #000000;
+  }
