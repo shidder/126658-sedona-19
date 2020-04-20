@@ -1,20 +1,32 @@
+@import "variables.scss";
 @import "fonts.scss";
+@import "scaffolding.scss";
 @import "visually-hidden.scss";
-@import "main-menu.scss";
-@import "body.scss";
-@import "wrapper.scss";
-@import "features.scss";
-@import "main-desc.scss";
-@import "main-header.scss";
-@import "main-features.scss";
-@import "main-menu.scss";
-@import "main-nav.scss";
-@import "links.scss";
-@import "advices.scss";
-@import "main-bg.scss";
-@import "socials-list.scss";
-@import "photo-list.scss";
-@import "presentation.scss";
-@import "hashtag";
-@import "search-hotel.scss";
+
+@import "blocks/wrapper.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/main-menu.scss";
+
+@import "blocks/main-bg.scss";
+
+
+@import "blocks/features.scss";
+@import "blocks/main-desc.scss";
+
+@import "blocks/main-features.scss";
+
+
+@import "blocks/advices.scss";
+
+@import "blocks/socials-list.scss";
+@import "blocks/photo-list.scss";
+@import "blocks/presentation.scss";
+@import "blocks/hashtag";
+@import "blocks/search-hotel.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/map.scss";
+@import "blocks/copyright.scss";
+@import "blocks/form.scss";
+@import "blocks/fieldset.scss";
 

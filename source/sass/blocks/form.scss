@@ -1,0 +1,26 @@
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .form__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__fieldset--impress {
+    order: -1;
+    flex-grow: 1;
+  }
+
+  .form__fieldset--name {
+    flex-grow: 1;
+  }
+
+  .form__fieldset--contacts,
+  .form__fieldset--places,
+  .form__fieldset--comment {
+    width: 100%;
+  }
+}

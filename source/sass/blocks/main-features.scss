@@ -1,0 +1,10 @@
+.main-features {
+  display: flex;
+  flex-wrap: wrap;
+  color: #ffffff;
+  background-color: #81b3d2;
+
+  &--first {
+    padding-top: 43px;
+  }
+}

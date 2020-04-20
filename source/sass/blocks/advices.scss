@@ -1,4 +1,6 @@
 .advices {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   color: #000000;
   background-color: #ffffff;
@@ -6,8 +8,11 @@
   padding-bottom: 40px;
   padding-left: 0;
 
-}
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 
-.advices__title {
-  margin: 0;
+  &__title {
+    margin: 0;
+  }
 }
