@@ -21,9 +21,12 @@
     &__image--desktop {
       display: none;
     }
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     &__image--desktop  {
       display: block;
     }
@@ -45,4 +48,5 @@
     line-height: 24px;
     font-weight: 700;
   }
+
 }
