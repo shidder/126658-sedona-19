@@ -1,0 +1,48 @@
+.photo-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0;
+  &__image  {
+    display: block;
+    &--tablet,
+    &--desktop {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    &__image--tablet  {
+      display: block;
+    }
+    &__image,
+    &__image--desktop {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &__image--desktop  {
+      display: block;
+    }
+    &__image--tablet,
+    &__image {
+      display: none;
+    }
+  }
+
+  &__title {
+    line-height: 24px;
+  }
+
+  &__author {
+    text-transform: none;
+    line-height: 24px;
+  }
+  &__likes {
+    line-height: 24px;
+    font-weight: 700;
+  }
+}
