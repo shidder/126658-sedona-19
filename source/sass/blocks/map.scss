@@ -4,13 +4,13 @@
   &--desktop {
     display: none;
   }
-
+}
   @media (min-width: $tablet-width) {
-    &--desktop {
+    .map__image,
+    .map__image--desktop{
       display: none;
     }
-
-    &--tablet {
+      .map__image--tablet {
       display: block;
     }
   }
@@ -24,4 +24,4 @@
       display: block;
     }
   }
-}
+

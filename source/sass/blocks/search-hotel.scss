@@ -5,6 +5,10 @@
   line-height: 26px;
 }
 
+.search-hotel__desc {
+  line-height: 24px;
+}
+
 .search-hotel__btn {
   width: 280px;
   background-color: #81b3d2;
@@ -12,4 +16,16 @@
 
 .search-hotel__btn-result {
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .search-hotel {
+    &__title {
+      font-size: 30px;
+    }
+    &__desc {
+      line-height: 24px;
+    }
+
+}
 }
