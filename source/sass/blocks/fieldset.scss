@@ -1,5 +1,3 @@
-
-
 .fieldset__wrapper {
   display: flex;
   flex-direction: column;
@@ -8,7 +6,6 @@
 .fieldset__legend {
   font-weight: 700;
   font-size: 18px;
-
 }
 
 .fieldset__input,
@@ -19,25 +16,22 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  font-family:inherit;
-  }
+  font-family: inherit;
+}
 
-  .fieldset__input {
-    outline: none;
-  }
+.fieldset__input {
+  outline: none;
+}
 
-  .fieldset__label {
-    line-height: 26px;
-  }
+.fieldset__label {
+  line-height: 26px;
+}
 
-  .fieldset__textarea::placeholder {
-    color: #000000;
-  }
-
+.fieldset__textarea::placeholder {
+  color: #000000;
+}
 
 @media (min-width: $tablet-width) {
-
-
   .fieldset__wrapper--places {
     width: 50%;
     margin: auto;
@@ -48,14 +42,13 @@
 
   .fieldset__wrapper-input--phone,
   .fieldset__wrapper-input--mail {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
-
 }
 
 @media (min-width: $desktop-width) {
-    .fieldset__wrapper--contacts {
+  .fieldset__wrapper--contacts {
     flex-direction: row;
     justify-content: space-around;
   }
@@ -68,8 +61,5 @@ flex-direction: column;
   .fieldset__wrapper--places {
     width: 100%;
     justify-content: space-around;
-
   }
 }
-
-
