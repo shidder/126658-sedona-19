@@ -11,6 +11,14 @@
     }
   }
 
+.photo-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -23,6 +31,18 @@
     &__image--desktop {
       display: none;
     }
+
+    .photo-list__author {
+
+      order: 1;
+    }
+
+    .photo-list__likes {
+      align-self: flex-end;
+
+    }
+
+
   }
 
   @media (min-width: $desktop-width) {
