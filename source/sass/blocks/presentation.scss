@@ -1,5 +1,5 @@
 .presentation {
-  &__image  {
+  &__image {
     display: block;
   }
 
@@ -10,17 +10,18 @@
 
   &__title {
     font-size: 18px;
-  line-height: 26px;
+    line-height: 26px;
   }
 
   &__desc {
-  line-height: 24px;
+    line-height: 24px;
   }
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
 
-    &__image--tablet  {
+    &__image--tablet {
       display: block;
     }
 
@@ -28,18 +29,16 @@
     &__image--desktop {
       display: none;
     }
-
-
-
-}
-@media (min-width: $desktop-width) {
-  &__image--desktop  {
-    display: block;
   }
 
-  &__image--tablet,
-  &__image {
-    display: none;
+  @media (min-width: $desktop-width) {
+    &__image--desktop {
+      display: block;
+    }
+
+    &__image--tablet,
+    &__image {
+      display: none;
+    }
   }
-}
 }

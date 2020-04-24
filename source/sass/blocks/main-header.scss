@@ -13,12 +13,12 @@
 
   &__logo-image {
     display: block;
+
     &--tablet,
     &--desktop {
       display: none;
     }
   }
-
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
@@ -38,7 +38,6 @@
       display: block;
     }
   }
-
 
   @media (min-width: $desktop-width) {
     padding-bottom: 0;

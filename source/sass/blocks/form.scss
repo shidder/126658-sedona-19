@@ -10,12 +10,16 @@
   }
 
   .form__fieldset--impress {
+    box-sizing: border-box;
     order: -1;
-    flex-grow: 1;
+    width: 50%;
+    margin: 0;
   }
 
   .form__fieldset--name {
-    flex-grow: 1;
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0;
   }
 
   .form__fieldset--contacts,
@@ -33,5 +37,4 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: #81b3d2;
-  font-family: inherit;
 }
