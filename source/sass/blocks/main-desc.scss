@@ -55,11 +55,15 @@
 
     @media (min-width: $tablet-width) {
       padding-bottom: 29px;
+      padding-right: 93px;
+      padding-left: 93px;
       font-size: 21px;
     }
 
     @media (min-width: $desktop-width) {
       padding-bottom: 32px;
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 }

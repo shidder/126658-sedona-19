@@ -1,6 +1,6 @@
 .presentation {
   padding-top: 11px;
-  padding-bottom: 116px;
+  padding-bottom: 113px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -12,7 +12,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 28px;
+    margin-bottom: 45px;
   }
 
 }
@@ -20,37 +20,32 @@
 .presentation__image {
   display: block;
 
-  &--tablet,
-  &--desktop {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &--tablet {
     display: none;
 
     @media (min-width: $tablet-width) {
-      display: none;
-
-      &--desktop {
-        display: none;
-      }
-
-      &--tablet {
-        display: block;
-      }
+      display: block;
     }
-
     @media (min-width: $desktop-width) {
       display: none;
+    }
+  }
 
-      &--tablet {
-        display: none;
-      }
+  &--desktop {
+    display: none;
 
-      &--desktop {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
+    @media (min-width: $desktop-width) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
+
 
 .presentation__title {
   margin: 0;
@@ -74,11 +69,13 @@
   @media (min-width: $tablet-width) {
     padding-left: 103px;
     padding-right: 103px;
-    padding-bottom: 74px;
+    padding-bottom: 73px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 95px;
+    padding-bottom: 71px;
+    padding-left: 330px;
+    padding-right: 330px;
   }
 }
 
@@ -87,7 +84,7 @@
   min-height: 111px;
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
-  bottom: 46px;
+  bottom: 49px;
   left: 20px;
 
   @media (min-width: $tablet-width) {
@@ -95,7 +92,13 @@
     min-height: 93px;
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    left: 140px;
   }
 }
 
