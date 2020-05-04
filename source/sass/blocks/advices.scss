@@ -4,21 +4,108 @@
   list-style: none;
   color: #000000;
   background-color: #ffffff;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 16px;
+  padding-bottom: 25px;
   padding-left: 0;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    padding-top: 56px;
+    padding-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 76px;
+  }
+}
+
+.advices__item {
+  position: relative;
+  padding-right: 41px;
+  padding-left: 69px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    width: 33.3%;
+    padding-top: 103px;
+    padding-right: 46px;
+    padding-left: 46px;
+
+    &--gift {
+      order: 1;
+    }
+  }
+}
+
+.advices__item-icon {
+  position: absolute;
+  top: 10px;
+  left: 22px;
+
+  &--gift {
+    width: 32px;
+
+    @media (min-width: $tablet-width) {
+      width: 64px;
+      top: 0px;
+      left: 95px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 167px;
+    }
+  }
+
+  &--house {
+    width: 37px;
+
+    @media (min-width: $tablet-width) {
+      width: 75px;
+      top: 3px;
+      left: 90px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 161px;
+    }
+  }
+
+  &--food {
+    width: 40px;
+
+    @media (min-width: $tablet-width) {
+      width: 77px;
+      top: 6px;
+      left: 89px;
+    }
+
+    @media (min-width: $desktop-width) {
+       left: 161px;
+    }
   }
 }
 
 .advices__title {
+  padding-top: 19px;
+  padding-bottom: 15px;
   margin: 0;
   font-size: 18px;
   line-height: 26px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 21px;
     font-size: 21px;
+    text-align: center;
+  }
+}
+
+.advices__desc {
+  margin: 0;
+  padding-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
   }
 }

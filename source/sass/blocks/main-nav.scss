@@ -1,3 +1,28 @@
 .main-nav__toggle {
-  position: absolute;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &--open {
+    position: absolute;
+    bottom: 12px;
+    right: 20px;
+    width: 27px;
+    height: 27px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  &--close {
+    position: absolute;
+    top: 16px;
+    right: 22px;
+    width: 27px;
+    height: 27px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
 }
+

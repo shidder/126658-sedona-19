@@ -1,16 +1,107 @@
+.fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fieldset__legend,
+.fieldset__input {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.fieldset__legend {
+  padding-bottom: 25px;
+}
+
+.fieldset__label {
+  line-height: 26px;
+}
+
+.fieldset__input {
+  border: none;
+}
+
+/*.fieldset__input-name {
+  width: 230px;
+  padding-left: 36px;
+  box-sizing: border-box;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.fieldset {
+  width: 320px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  }
+
 .fieldset__wrapper {
   display: flex;
   flex-direction: column;
 }
 
+.fieldset__wrapper-input {
+  display: flex;
+  padding-bottom: 50px;
+}
+
 .fieldset__legend {
+  padding-bottom: 41px;
   font-weight: 700;
   font-size: 18px;
 }
 
 .fieldset__input,
-.fieldset__wrapper--impress .fieldset__label,
-.fieldset__wrapper--places .fieldset__label,
+.fieldset__wrapper-impress .fieldset__label,
+.fieldset__wrapper-places .fieldset__label,
 .fieldset__textarea {
   text-transform: none;
   font-weight: 700;
@@ -20,7 +111,7 @@
 }
 
 .fieldset__input {
-  outline: none;
+ border: none;
 }
 
 .fieldset__label {
@@ -31,7 +122,16 @@
   color: #000000;
 }
 
-@media (min-width: $tablet-width) {
+.fieldset__input-name {
+  width: 230px;
+  padding-top: 22px;
+  padding-right: 171px;
+  padding-bottom: 19px;
+  padding-left: 22px;
+  background-color: #f2f2f2;
+}
+
+media (min-width: $tablet-width) {
   .fieldset__wrapper--places {
     width: 50%;
     margin: auto;
@@ -63,3 +163,4 @@
     justify-content: space-around;
   }
 }
+*/

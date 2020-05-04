@@ -1,10 +1,14 @@
-.feedback {
-  &__title {
+.feedback__title {
+  padding-top: 37px;
+  padding-bottom: 26px;
+margin: 0;
     font-size: 18px;
     line-height: 26px;
+}
+
+.feedback__desc {
+  margin: 0;
+    line-height: 24px;
+    margin-bottom: 38px;
   }
 
-  &__desc {
-    line-height: 24px;
-  }
-}
