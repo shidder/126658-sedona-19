@@ -1,3 +1,6 @@
+.map {
+  margin-bottom: 10px;
+}
 .map__image {
   display: block;
 
@@ -5,25 +8,26 @@
   &--desktop {
     display: none;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .map__image,
-  .map__image--desktop {
+  @media (min-width: $tablet-width) {
     display: none;
+
+    &--desktop {
+      display: none;
+    }
+    &--tablet {
+      display: block;
+    }
   }
 
-  .map__image--tablet {
-    display: block;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  &--tablet {
+  @media (min-width: $desktop-width) {
     display: none;
-  }
 
-  &--desktop {
-    display: block;
+    &--tablet {
+      display: none;
+    }
+    &--desktop {
+      display: block;
+    }
   }
 }

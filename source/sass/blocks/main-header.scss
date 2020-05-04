@@ -1,59 +1,57 @@
 .main-header {
   position: relative;
   background-color: #ffffff;
-  padding-bottom: 56px;
-
-  &__logo {
-    display: block;
-    position: absolute;
-    left: 50%;
-    margin-left: -50px;
-    z-index: 1;
-  }
-
-  &__logo-image {
-    display: block;
-
-    &--tablet,
-    &--desktop {
-      display: none;
-    }
-  }
+  padding-bottom: 54px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
+  }
+}
 
-    &__logo {
-      top: 0;
-      z-index: 1;
-      margin-left: -51px;
-    }
+.main-header__logo {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  z-index: 1;
 
-    &__logo-image,
-    &__logo-image--desktop {
+  @media (min-width: $tablet-width) {
+    top: 0;
+    z-index: 1;
+    margin-left: -51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -93px;
+  }
+}
+
+.main-header__logo-image {
+  display: block;
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+
+    &--desktop {
       display: none;
     }
-
-    &__logo-image--tablet {
+    &--tablet {
       display: block;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 0;
+    display: none;
 
-    &__logo {
-      top: 0;
-      z-index: 1;
-      margin-left: -93px;
-    }
-
-    &__logo-image,
-    &__logo-image--tablet {
+    &--tablet {
       display: none;
     }
-
-    &__logo-image--desktop {
+    &--desktop {
       display: block;
     }
   }
