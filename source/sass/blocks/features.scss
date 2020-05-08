@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width),
-    (min-width: $desktop-width) {
+      (min-width: $desktop-width) {
       display: none;
     }
   }
