@@ -1,14 +1,35 @@
 .feedback__title {
   padding-top: 37px;
   padding-bottom: 26px;
-margin: 0;
-    font-size: 18px;
-    line-height: 26px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 74px;
+    padding-bottom: 31px;
+    font-size: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 113px;
+  }
 }
 
 .feedback__desc {
   margin: 0;
-    line-height: 24px;
-    margin-bottom: 38px;
+  line-height: 24px;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 164px;
+    padding-left: 164px;
+    margin-bottom: 54px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-right: 380px;
+    padding-left: 380px;
+    margin-bottom: 37px;
+  }
+}

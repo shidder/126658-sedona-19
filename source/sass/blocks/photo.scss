@@ -1,6 +1,4 @@
 .photo {
-  padding-top: 24px;
-
   @media (min-width: $tablet-width) {
     padding-top: 22px;
   }
@@ -29,107 +27,147 @@
 }
 
 .photo__list-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: baseline;
 
   @media (min-width: $tablet-width) {
-    display: block;
     position: relative;
     width: 100%;
-    padding-bottom: 80px;
+    padding-bottom: 11px;
     background-color: #f2f2f2;
+    padding-left: 20px;
+    box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     bottom: 0;
-    background-color:  rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
 .photo__list-image {
-    display: block;
+  display: block;
 
-    &--tablet,
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+
     &--desktop {
       display: none;
     }
 
-    @media (min-width: $tablet-width) {
-      display: none;
+    &--tablet {
+      display: block;
+    }
+  }
 
-      &--desktop {
-        display: none;
-      }
-      &--tablet {
-        display: block;
-      }
+  @media (min-width: $desktop-width) {
+    display: none;
+
+    &--tablet {
+      display: none;
     }
 
-    @media (min-width: $desktop-width) {
-      display: none;
+    &--desktop {
+      display: block;
+    }
+  }
+}
 
-      &--tablet {
-        display: none;
-      }
-      &--desktop {
-        display: block;
+.photo__list-item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 19px;
+  padding-top: 21px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top: 1px solid rgba(242, 242, 242, 0.9);
+
+  &:nth-child(2),
+  &:nth-child(4) {
+    .photo__list-like {
+      @media (min-width: $tablet-width) {
+        right: 30px;
       }
     }
   }
 
-  .photo__list-item {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 40px;
-    margin: auto;
+  &:nth-child(3) {
+    .photo__list-wrapper {
+      @media (min-width: $tablet-width) {
+        background-color: #eaeaea;
+      }
 
-    @media (min-width: $tablet-width)  {
-      padding-bottom: 0;
-      margin: 0;
+      @media (min-width: $desktop-width) {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
     }
 
-    @media (min-width: $desktop-width)  {
-      position: relative;
-      color: #ffffff;
+    .photo__list-like {
+      @media (min-width: $tablet-width) {
+        right: 37px;
+      }
     }
-}
+  }
 
-  .photo__list-title {
-    line-height: 24px;
-    padding-top: 15px;
+  @media (min-width: $tablet-width) {
+    padding: 0;
     margin: 0;
-
-    @media (min-width: $tablet-width)  {
-      position: absolute;
-      left: 20px;
-      padding-top: 15px;
-    }
-}
-
-  .photo__list-author {
-    text-transform: none;
-    line-height: 24px;
-
-    @media (min-width: $tablet-width)  {
-      order: 1;
-      position: absolute;
-      left: 20px;
-      top: 39px;
-    }
-}
-
-  .photo__list-likes {
-    padding-top: 8px;
-    padding-left: 37px;
-    line-height: 24px;
-    font-weight: 700;
-
-    @media (min-width: $tablet-width)  {
-      position: absolute;
-      bottom: 28px;
-      right: 21px;
-      padding: 0;
-    }
+    border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    color: #ffffff;
+  }
+}
+
+.photo__list-title {
+  line-height: 24px;
+  padding-top: 15px;
+  margin: 0;
+}
+
+.photo__list-author {
+  text-transform: none;
+  line-height: 24px;
+  padding-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
+.photo__list-like {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 20px;
+    padding-top: 27px;
+  }
+}
+
+.photo__list-icon {
+  border: none;
+  background-color: transparent;
+  padding-left: 0;
+  padding-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-right: 9px;
+  }
+}
+
+.photo__list-number {
+  line-height: 24px;
+  font-weight: 700;
+}

@@ -1,20 +1,25 @@
 .presentation {
-  padding-top: 11px;
-  padding-bottom: 113px;
+  padding-top: 33px;
+  padding-bottom: 5px;
+  margin-bottom: 45px;
   position: relative;
+  border-top: 1px solid rgba(242, 242, 242, 0.9);
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
     padding-left: 60px;
     padding-right: 60px;
-    padding-bottom: 50px;
+    padding-top: 11px;
+    margin-bottom: 46px;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 45px;
+    margin-bottom: 90px;
+    padding-left: 200px;
+    padding-right: 200px;
   }
-
 }
 
 .presentation__image {
@@ -30,6 +35,7 @@
     @media (min-width: $tablet-width) {
       display: block;
     }
+
     @media (min-width: $desktop-width) {
       display: none;
     }
@@ -46,7 +52,6 @@
   }
 }
 
-
 .presentation__title {
   margin: 0;
   font-size: 18px;
@@ -57,12 +62,17 @@
     padding-bottom: 31px;
     font-size: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 27px;
+
+  }
 }
 
 .presentation__desc {
   line-height: 24px;
   margin: 0;
-  padding-bottom: 35px;
+  padding-bottom: 33px;
   padding-left: 41px;
   padding-right: 41px;
 
@@ -74,36 +84,141 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 71px;
-    padding-left: 330px;
-    padding-right: 330px;
+    padding-left: 180px;
+    padding-right: 180px;
   }
 }
 
 .presentation__controls {
-  width: 280px;
+  width: 100%;
   min-height: 111px;
-  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-height: 40px;
+  }
+}
+
+.presentation__video-progress {
   position: absolute;
-  bottom: 49px;
+  min-height: 45px;
+  width: 280px;
+  background-color: rgba(0, 0, 0, 0.6);
+  bottom: 70px;
   left: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
     min-height: 93px;
-    background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    bottom: 0;
+    width: 100%;
+    bottom: 0px;
     left: 0;
+  }
+}
+
+.presentation__video-scale {
+  position: relative;
+  width: 84%;
+  height: 3px;
+  margin-left: auto;
+  margin-top: 22px;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  @media (min-width: $tablet-width) {
+    width: 60%;
+    margin-top: 45px;
+    margin-left: 94px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 800px;
-    left: 140px;
+    width: 67%;
+  }
+}
+
+.presentation__video-marker {
+  position: absolute;
+  top: -100%;
+  left: 36px;
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    left: 112px;
+  }
+}
+
+.presentation__video-buttons {
+  max-width: 280px;
+  min-height: 66px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f2f2f2;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    background-color: transparent;
+    min-width: 648px;
+    bottom: 13px;
+  }
+}
+
+.presentation__video-replay,
+.presentation__video-subtitles,
+.presentation__video-fullscreen {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+}
+
+.presentation__video-subtitles {
+  top: 22px;
+  right: 68px;
+
+  @media (min-width: $tablet-width) {
+    right: 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -64px;
+  }
+}
+
+.presentation__video-replay {
+  top: 21px;
+  left: 19px;
+
+  @media (min-width: $tablet-width) {
+    left: 30px;
+  }
+}
+
+.presentation__video-fullscreen {
+  top: 22px;
+  right: 17px;
+
+  @media (min-width: $tablet-width) {
+    right: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -116px;
   }
 }
 
 .presentation__video {
   @media (min-width: $tablet-width) {
     position: relative;
+  }
+}
+
+.presentation__video-icon {
+  @media (min-width: $tablet-width) {
+    fill: #ffffff;
   }
 }

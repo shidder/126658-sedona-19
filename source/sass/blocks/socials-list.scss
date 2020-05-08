@@ -2,23 +2,23 @@
   display: flex;
   list-style: none;
   padding: 0;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
-    margin-left: -22px;
+    margin-left: -9px;
     padding-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -6px;
+    margin-left: -6px
   }
 }
 
 .socials-list__item {
   position: relative;
   margin-left: 3px;
-    margin-right: 3px;
+  margin-right: 3px;
   background-color: #81b3d2;
 }
 
@@ -45,6 +45,3 @@
   top: 15px;
   left: 14px;
 }
-
-
-

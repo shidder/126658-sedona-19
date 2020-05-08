@@ -1,6 +1,7 @@
 .map {
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
+
 .map__image {
   display: block;
 
@@ -15,6 +16,7 @@
     &--desktop {
       display: none;
     }
+
     &--tablet {
       display: block;
     }
@@ -26,6 +28,7 @@
     &--tablet {
       display: none;
     }
+
     &--desktop {
       display: block;
     }
