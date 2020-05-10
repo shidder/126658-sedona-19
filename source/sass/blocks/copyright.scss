@@ -5,12 +5,14 @@
     padding-top: 27px;
   }
 }
-.copyright__text {
-    margin: 0;
-    line-height: 26px;
-    padding-bottom: 25px;
 
-    @media (min-width: $tablet-width) {
-      line-height: 26px;
-    }
+.copyright__text {
+  margin: 0;
+  line-height: 26px;
+  padding-bottom: 25px;
+  padding-right: 14px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 26px;
   }
+}

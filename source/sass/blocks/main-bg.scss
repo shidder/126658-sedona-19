@@ -1,69 +1,68 @@
-.main-bg__image  {
-    position: relative;
-    width: 320px;
-    height: 160px;
-    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom center;
+.main-bg__image {
+  position: relative;
+  width: 320px;
+  height: 160px;
+  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 290px;
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
+    background-size: contain, cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    height: 301px;
+    background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  &--index {
+    height: 389px;
 
     @media (min-width: $tablet-width) {
-      width: 100%;
-      height: 290px;
-      background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
-      background-size: contain, cover;
+      min-height: 518px;
+      background-size: 100%, cover;
     }
 
     @media (min-width: $desktop-width) {
-      width: 100%;
-      height: 301px;
-      background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
-    }
-
-    &--index {
-      height: 389px;
-
-      @media (min-width: $tablet-width) {
-        min-height: 518px;
-        background-size: 100%, cover;
-      }
-
-      @media (min-width: $desktop-width) {
-        background-size: contain;
-      }
+      background-size: contain;
     }
   }
+}
 
-  .main-bg__text {
+.main-bg__text {
+  position: absolute;
+  bottom: 43%;
+  left: 50%;
+  margin-left: -115px;
+  width: 229px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 40%;
+    margin-left: -230px;
+    width: 460px;
+  }
+
+  &--index {
     position: absolute;
-    bottom: 43%;
-    left: 50%;
-    margin-left: -115px;
-    width: 229px;
+    bottom: 22%;
+    left: 20px;
+    width: 281px;
 
     @media (min-width: $tablet-width) {
-      bottom: 40%;
+      position: absolute;
+      bottom: 91px;
+      left: 50%;
       margin-left: -230px;
       width: 460px;
     }
 
-    &--index {
+    @media (min-width: $tablet-width) {
       position: absolute;
-      bottom: 22%;
-      left: 20px;
-      width: 281px;
-
-      @media (min-width: $tablet-width) {
-        position: absolute;
-        bottom: 91px;
-        left: 50%;
-        margin-left: -230px;
-        width: 460px;
-      }
-
-      @media (min-width: $tablet-width) {
-        position: absolute;
-        bottom: 17%;
-      }
+      bottom: 17%;
     }
   }
-
+}
