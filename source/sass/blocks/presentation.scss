@@ -24,32 +24,6 @@
 
 .presentation__image {
   display: block;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  &--tablet {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
-
-  &--desktop {
-    display: none;
-
-    @media (min-width: $desktop-width) {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
 }
 
 .presentation__title {

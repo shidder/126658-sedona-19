@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -46,18 +47,21 @@
         </button>
       </nav>
       <a href="index.html" class="main-header__logo">
-        <img class="main-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Логотип Седоны">
-        <img class="main-header__logo-image--tablet" src="img/logo-sedona-tablet.svg" alt="Логотип Седоны">
-        <img class="main-header__logo-image--desktop" src="img/logo-sedona-desktop.svg" alt="Логотип Седоны">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="main-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83"
+            alt="Логотип Седоны">
+        </picture>
       </a>
     </header>
     <main class="main">
 
-      <div class="main-bg">
-          <div class="main-bg__image">
+
+          <div class="main-bg">
             <img class="main-bg__text" src="img/text-sedona.svg" alt="Надпись Седона">
           </div>
-      </div>
+
       <div class="main-desc">
         <h3 class="main-desc__title">Фото и видео</h3>
         <p class="main-desc__desc">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
@@ -67,9 +71,12 @@
       <section class="photo">
         <ul class="photo__list">
           <li class="photo__list-item">
-            <img class="photo__list-image" src="img/photo-sunset-mobile@1x.jpg" alt="Фото заката">
-            <img class="photo__list-image--tablet" src="img/photo-sunset-tablet@1x.jpg" alt="Фото заката">
-            <img class="photo__list-image--desktop" src="img/photo-sunset-desktop@1x.jpg" alt="Фото заката">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+              <img class="photo__list-image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x"
+              alt="Фото заката">
+            </picture>
             <div class="photo__list-wrapper">
               <h4 class="photo__list-title">Неродные просторы</h4>
               <span class="photo__list-author">Автор фото: Борис</span>
@@ -93,9 +100,12 @@
             </div>
           </li>
           <li class="photo__list-item">
-            <img class="photo__list-image" src="img/photo-cactus-mobile@1x.jpg" alt="Фото кактуса">
-            <img class="photo__list-image--tablet" src="img/photo-cactus-tablet@1x.jpg" alt="Фото кактуса">
-            <img class="photo__list-image--desktop" src="img/photo-cactus-desktop@1x.jpg" alt="Фото кактуса">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+              <img class="photo__list-image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x"
+              alt="Фото кактуса">
+            </picture>
             <div class="photo__list-wrapper">
               <h4 class="photo__list-title">Местная растительность</h4>
               <span class="photo__list-author">Автор фото: Сергей</span>
@@ -119,9 +129,12 @@
             </div>
           </li>
           <li class="photo__list-item">
-            <img class="photo__list-image" src="img/photo-roads-mobile@1x.jpg" alt="Фото дороги">
-            <img class="photo__list-image--tablet" src="img/photo-roads-tablet@1x.jpg" alt="Фото дороги">
-            <img class="photo__list-image--desktop" src="img/photo-roads-desktop@1x.jpg" alt="Фото дороги">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+              <img class="photo__list-image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x"
+              alt="Фото дороги">
+            </picture>
             <div class="photo__list-wrapper">
               <h4 class="photo__list-title">Дорога на север</h4>
               <span class="photo__list-author">Автор фото: Петр</span>
@@ -145,9 +158,12 @@
             </div>
           </li>
           <li class="photo__list-item">
-            <img class="photo__list-image" src="img/photo-bridge-mobile@1x.jpg" alt="Фото моста дьявола">
-            <img class="photo__list-image--tablet" src="img/photo-bridge-tablet@1x.jpg" alt="Фото моста дьявола">
-            <img class="photo__list-image--desktop" src="img/photo-bridge-desktop@1x.jpg" alt="Фото моста дьявола">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <img class="photo__list-image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x"
+              alt="Фото моста дьявола">
+            </picture>
             <div class="photo__list-wrapper">
               <h4 class="photo__list-title">Мост Дьявола</h4>
               <span class="photo__list-author">Автор фото: Антон</span>
@@ -177,9 +193,13 @@
         <p class="presentation__desc">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
           раз!</p>
         <div class="presentation__video">
-          <img class="presentation__image" src="img/video-mobile@1x.jpg" width="320" height="201" alt="Обложка видеопрезентации">
-          <img class="presentation__image--tablet" src="img/video-tablet@1x.jpg" alt="Обложка видеопрезентации">
-          <img class="presentation__image--desktop" src="img/video-desktop@1x.jpg" alt="Обложка видеопрезентации">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="presentation__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x"
+            alt="Фото заката">
+          </picture>
+
 
                <div class="presentation__video-progress">
               <div class="presentation__video-scale"><button class="presentation__video-marker"></button></div>
