@@ -1,9 +1,7 @@
 .features {
   position: relative;
   padding-top: 2px;
-
-  }
-
+}
 
 .features__list {
   display: flex;
@@ -98,7 +96,6 @@
 
 .features__list-image {
   display: block;
-
 }
 
 .features__list-other {
@@ -141,7 +138,7 @@
 }
 
 .features__list-img-wrap {
-    &--second {
+  &--second {
     @media (min-width: $tablet-width) {
       order: -1;
     }
