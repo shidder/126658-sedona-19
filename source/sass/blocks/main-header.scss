@@ -19,42 +19,23 @@
     top: 0;
     z-index: 1;
     margin-left: -51px;
+    width: auto;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: -93px;
+    width: auto;
   }
 }
 
 .main-header__logo-image {
-  display: block;
-
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
-
-    &--desktop {
-      display: none;
-    }
-
-    &--tablet {
-      display: block;
-    }
+  @media (min-width: $desktop-width) {
+    width: 102px;
+    height: 83px;
   }
 
   @media (min-width: $desktop-width) {
-    display: none;
-
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-    }
+    width: 188px;
+    height: 96px;
   }
 }

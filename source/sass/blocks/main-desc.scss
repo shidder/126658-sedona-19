@@ -1,8 +1,31 @@
 .main-desc {
+  position: relative;
   padding-top: 37px;
   padding-right: 27px;
   padding-left: 24px;
   margin-bottom: 20px;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -26px;
+    left: 0;
+    width: 100%;
+    height: 37px;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+      height: 57px;
+      top: -57px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding-left: 139px;
@@ -22,6 +45,26 @@
     padding-right: 33px;
     padding-left: 32px;
     margin-bottom: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -36px;
+      left: 0;
+      width: 100%;
+      height: 37px;
+      background-image: url("../img/bg-triangle.svg");
+      background-repeat: no-repeat;
+      z-index: 1;
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+
+      @media (min-width: $desktop-width) {
+        display: none;
+      }
+    }
 
     @media (min-width: $tablet-width) {
       padding-top: 50px;

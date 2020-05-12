@@ -97,16 +97,13 @@
       content: "";
       top: 25px;
     }
-
-    }
+  }
 
   &::after {
     @media (min-width: $tablet-width) {
       content: "";
       top: 25px;
-
     }
-
   }
 }
 
@@ -123,14 +120,13 @@
 
 .fieldset__legend-name {
   @media (min-width: $tablet-width) {
-  padding-right: 50px;
-}
+    padding-right: 50px;
+  }
 
-@media (min-width: $desktop-width) {
-  padding-right: 166px;
+  @media (min-width: $desktop-width) {
+    padding-right: 166px;
+  }
 }
-}
-
 
 .fieldset__name {
   display: flex;

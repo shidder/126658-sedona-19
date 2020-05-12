@@ -1,36 +1,3 @@
 .map {
   margin-bottom: 9px;
 }
-
-.map__image {
-  display: block;
-
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
-
-    &--desktop {
-      display: none;
-    }
-
-    &--tablet {
-      display: block;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-    }
-  }
-}
