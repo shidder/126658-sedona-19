@@ -1,9 +1,13 @@
 .main-desc {
   position: relative;
   padding-top: 37px;
-  padding-right: 27px;
-  padding-left: 24px;
+  padding-right: 23px;
+  padding-left: 23px;
   margin-bottom: 20px;
+
+  &--photo {
+    padding-left: 24px;
+  }
 
 
   &::before {
@@ -28,15 +32,15 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 139px;
+    padding-left: 138px;
     padding-top: 74px;
-    padding-right: 139px;
+    padding-right: 145px;
     padding-bottom: 39px;
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 113px;
+    padding-top: 111px;
     padding-bottom: 40px;
   }
 
@@ -68,6 +72,7 @@
 
     @media (min-width: $tablet-width) {
       padding-top: 50px;
+      padding-right: 39px;
       padding-bottom: 41px;
     }
 
