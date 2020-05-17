@@ -1,3 +1,20 @@
 .map {
+  position: relative;
   margin-bottom: 4px;
+}
+
+.map__icon {
+  position: absolute;
+  top: 161px;
+  left: 146px;
+
+  @media (min-width: $tablet-width) {
+    top: 164px;
+    left: 370px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 161px;
+    left: 586px;
+  }
 }
