@@ -2,6 +2,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 23px;
+  }
 }
 
 .photo__list {
@@ -126,7 +130,7 @@
   }
 }
 
-.photo__list-icon {
+.photo__list-btn {
   border: none;
   background-color: transparent;
   padding-left: 0;
@@ -135,6 +139,14 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     padding-right: 9px;
+  }
+}
+
+.photo__list-icon {
+  fill: rgba(0, 0, 0, 0.3);
+
+  @media (min-width: $desktop-width) {
+    fill: #ffffff;
   }
 }
 

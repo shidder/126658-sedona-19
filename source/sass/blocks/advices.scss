@@ -47,11 +47,13 @@
 
 .advices__item-icon {
   position: absolute;
-  top: 10px;
   left: 22px;
+  fill: #81b3d2;
 
   &--gift {
     width: 32px;
+    top: -11px;
+    left: 25px;
 
     @media (min-width: $tablet-width) {
       width: 64px;
@@ -66,6 +68,7 @@
 
   &--house {
     width: 37px;
+    top: -7px;
 
     @media (min-width: $tablet-width) {
       width: 75px;
@@ -80,6 +83,8 @@
 
   &--food {
     width: 40px;
+    top: -3px;
+    left: 18px;
 
     @media (min-width: $tablet-width) {
       width: 77px;
