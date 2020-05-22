@@ -16,3 +16,17 @@
     line-height: 26px;
   }
 }
+
+.copyright__icon {
+  @media (min-width: $desktop-width) {
+    &:hover,
+    &:focus {
+      fill: $blue;
+    }
+
+    &:active {
+      fill: $black-active;
+    }
+}
+
+}

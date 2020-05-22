@@ -22,6 +22,15 @@
   padding-bottom: 8px;
   box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
 
+  &:hover,
+  &:focus {
+    background-color: $btn-hover;
+  }
+
+  &:active {
+    background-color: $btn-active;
+  }
+
   @media (min-width: $tablet-width) {
     box-shadow: none;
     width: 25%;
@@ -31,9 +40,19 @@
     &:nth-child(3) {
       margin-left: 157px;
     }
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+    }
+
+    &:active {
+      background-color: transparent;
+    }
   }
 
   @media (min-width: $desktop-width) {
+
     &:nth-child(3) {
       margin-left: 237px;
     }
@@ -43,9 +62,37 @@
 .main-menu__link {
   color: #ffffff;
 
+  &:active {
+    color: $white-active;
+  }
+
   @media (min-width: $tablet-width) {
     color: #000000;
     font-size: 14px;
     line-height: 26px;
+}
+
+  @media (min-width: $desktop-width) {
+    &:hover,
+    &:focus{
+      color: $blue;
+    }
+
+    &:active {
+      color: $black-active;
+    }
+
+    &--active {
+      color: #766357;
+
+      &:hover,
+      &:focus {
+        color: #604e43;
+      }
+
+      &:active {
+        color: rgba(118, 99, 87, 0.3);
+      }
+    }
   }
 }

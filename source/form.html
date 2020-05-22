@@ -6,6 +6,7 @@
   <title>HTML Academy: Седона</title>
   <link rel="preload" href="fonts/ptsans.woff2" as="font">
   <link href="css/style.min.css" rel="stylesheet">
+  <script src="./js/svg4everybody-min.js"></script>
 </head>
 <body>
   <div class="wrapper">
@@ -17,14 +18,14 @@
           </svg>
         </button>
         <ul class="main-nav__menu main-menu">
-          <li class="main-menu__item main-menu__item--active">
+          <li class="main-menu__item">
             <a class="main-menu__link" href="index.html">Главная</a>
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Форма отзыва</a>
+            <a class="main-menu__link main-menu__link--active" href="#">Форма отзыва</a>
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link" href="#">HTML Academy</a>
@@ -54,6 +55,7 @@
           достопримечательностях</p>
       </div>
       <section class="feedback">
+        <h2 class="visually-hidden">Форма отзыва</h2>
         <form class="feedback__form form">
           <div class="form__wrapper">
             <fieldset class="form__fieldset-name fieldset">
@@ -100,16 +102,16 @@
               <legend class="fieldset__legend fieldset__legend-impress">Ваше общее впечатление:</legend>
               <div class=" fieldset__impress">
                 <div class="fieldset__impress-wrapper">
-                  <input class="visually-hidden fieldset__input-impress" type="radio" id="positive" checked="">
-                  <label class="fieldset__label-impress">Скорее положительное</label>
+                  <input class="visually-hidden fieldset__input-impress" type="radio" name="impress" id="positive" value="positive" checked>
+                  <label class="fieldset__label-impress" for="positive">Скорее положительное</label>
                 </div>
                 <div class="fieldset__impress-wrapper">
-                  <input class="visually-hidden fieldset__input-impress" type="radio" id="negative">
-                  <label class="fieldset__label-impress">Скорее отрицательное</label>
+                  <input class="visually-hidden fieldset__input-impress" type="radio" name="impress" id="negative" value="negative">
+                  <label class="fieldset__label-impress" for="negative">Скорее отрицательное</label>
                 </div>
                 <div class="fieldset__impress-wrapper">
-                  <input class="visually-hidden fieldset__input-impress" type="radio" id="none">
-                  <label class="fieldset__label-impress">Затрудняюсь ответить</label>
+                  <input class="visually-hidden fieldset__input-impress" type="radio" name="impress" id="none" value="none">
+                  <label class="fieldset__label-impress" for="none">Затрудняюсь ответить</label>
                 </div>
               </div>
             </fieldset>
@@ -117,20 +119,20 @@
               <legend class="fieldset__legend fieldset__legend-places">Посещенные достопримечательности:</legend>
               <div class="fieldset__places">
                 <div class="fieldset__places-wrapper">
-                  <input class="visually-hidden fieldset__input-places" type="checkbox" id="bridge" checked="">
-                  <label class="fieldset__label-places">Мост Дьявола</label>
+                  <input class="visually-hidden fieldset__input-places" type="checkbox" id="bridge" checked>
+                  <label class="fieldset__label-places" for="bridge">Мост Дьявола</label>
                 </div>
                 <div class="fieldset__places-wrapper">
-                  <input class="visually-hidden fieldset__input-places" type="checkbox" id="mountain" checked="">
-                  <label class="fieldset__label-places">Гора-Колокол</label>
+                  <input class="visually-hidden fieldset__input-places" type="checkbox" id="mountain" checked>
+                  <label class="fieldset__label-places" for="mountain">Гора-Колокол</label>
                 </div>
                 <div class="fieldset__places-wrapper">
-                  <input class="visually-hidden fieldset__input-places" type="checkbox" id="park" checked="">
-                  <label class="fieldset__label-places">Слайд-парк</label>
+                  <input class="visually-hidden fieldset__input-places" type="checkbox" id="park" checked>
+                  <label class="fieldset__label-places" for="park">Слайд-парк</label>
                 </div>
                 <div class="fieldset__places-wrapper">
                   <input class="visually-hidden fieldset__input-places" type="checkbox" id="hills">
-                  <label class="fieldset__label-places">Красные скалы</label>
+                  <label class="fieldset__label-places" for="hills">Красные скалы</label>
                 </div>
               </div>
             </fieldset>
@@ -176,6 +178,19 @@
           </svg></a>
       </div>
     </footer>
+    <section class="modal modal-error">
+        <h2 class="modal-error__title">Что-то пошло не так!</h2>
+    <p class="modal-error__desc">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal-error__btn" type="button">Ok</button>
+    </section>
+      <section class="modal modal-success">
+        <h2 class="modal-success__title">Ваш отзыв отправлен!</h2>
+        <p class="modal-success__desc">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="modal-success__btn-wrap">
+        <button class="modal-success__btn" type="button">Закрыть окно</button>
+      </div>
+      </section>
+
   </div>
 </body>
 </html>

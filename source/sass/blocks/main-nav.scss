@@ -4,6 +4,7 @@
   }
 
   &--open {
+    display: none;
     position: absolute;
     bottom: 12px;
     right: 20px;
@@ -19,6 +20,7 @@
   }
 
   &--close {
+    display: none;
     position: absolute;
     top: 16px;
     right: 22px;

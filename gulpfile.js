@@ -44,6 +44,14 @@ gulp.task("sprite", function()  {
     .pipe(gulp.dest("build/img"));
 });
 
+
+
+gulp.task("html", function () {
+  return gulp.src("source/*.html")
+    .pipe(posthtml())
+    .pipe(gulp.dest("build"));
+});
+
 gulp.task("html", function () {
   return gulp.src("source/*.html")
     .pipe(posthtml([
@@ -91,10 +99,12 @@ gulp.task("copy", function () {
   .pipe(postcss([
   autoprefixer()
   ]))
+  .pipe(gulp.dest("build/css"))
   .pipe(csso())
   .pipe(rename("style.min.css"))
   .pipe(sourcemap.write("."))
-  .pipe(gulp.dest("build/css"));
+  .pipe(gulp.dest("build/css"))
+  .pipe(server.stream());
   });
 
 gulp.task("server", function () {

@@ -60,13 +60,32 @@
   padding-top: 16px;
   padding-bottom: 16px;
   margin: auto;
-  background-color: #81b3d2;
+  background-color: $blue;
 
   @media (min-width: $tablet-width) {
     width: 458px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover,
+    &:focus {
+      background-color: $btn-hover;
+    }
+
+    &:active {
+      background-color: $btn-active;
+    }
+
+    &:disabled {
+      background-color: #e5e5e5
+    }
   }
 }
 
 .search-hotel__btn-result {
   color: #ffffff;
+
+  &:active {
+    color: $white-active;
+  }
 }
