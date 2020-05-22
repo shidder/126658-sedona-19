@@ -97,30 +97,12 @@ input[type=text] {
 
     @media (min-width: $desktop-width) {
       width: 282px;
-      left: -120%;
+      right: -120%;
     }
   }
 }
 
-.fieldset__legend-places {
-  @media (min-width: $tablet-width) {
-    max-width: 278px;
-  }
 
-  &::before {
-    @media (min-width: $tablet-width) {
-      content: "";
-      top: 25px;
-    }
-  }
-
-  &::after {
-    @media (min-width: $tablet-width) {
-      content: "";
-      top: 25px;
-    }
-  }
-}
 
 .fieldset__legend-impress {
   @media (min-width: $tablet-width) {
