@@ -6,6 +6,7 @@
   padding-top: 10px;
   padding-bottom: 47px;
 
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -32,25 +33,23 @@
 
 .form__fieldset-impress {
   @media (min-width: $tablet-width) {
+    max-width: 324px;
     order: -1;
     position: relative;
   }
 
-  &::after {
-    @media (min-width: $tablet-width) {
-      content: "";
-      position: absolute;
-      width: 294px;
-      height: 0.1px;
-      background-color: #dbdbdb;
-      transform: rotate(90deg);
-      top: 41%;
-      left: 54%;
-    }
+  @media (min-width: $desktop-width) {
+    max-width: 480px;
+  }
+}
 
-    @media (min-width: $desktop-width) {
-      left: 70%;
-    }
+.form__fieldset-name {
+  @media (min-width: $tablet-width) {
+    max-width: 324px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 480px;
   }
 }
 
@@ -61,7 +60,7 @@
 }
 
 .form__fieldset-places {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     width: 100%;
   }
 }
@@ -130,8 +129,8 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    padding-left: 65px;
-    padding-right: 76px;
+    padding-left: 64px;
+    padding-right: 74px;
     max-width: 324px;
   }
 

@@ -17,6 +17,8 @@
 
 .fieldset__legend {
   padding-bottom: 10px;
+margin-left: auto;
+margin-right: auto;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -67,12 +69,13 @@ input[type=text] {
     position: relative;
   }
 
+
   &::before {
     @media (min-width: $tablet-width) {
       content: "";
       position: absolute;
       width: 123px;
-      height: 0.1px;
+      height: 1px;
       background-color: #dbdbdb;
       top: 12px;
       left: -182px;
@@ -89,7 +92,7 @@ input[type=text] {
       content: "";
       position: absolute;
       width: 123px;
-      height: 0.1px;
+      height: 1px;
       background-color: #dbdbdb;
       top: 12px;
       right: -182px;
@@ -102,7 +105,63 @@ input[type=text] {
   }
 }
 
+.fieldset__legend-contacts {
+  padding-left: 0;
+  padding-right: 5px;
+}
 
+
+.fieldset__legend-places {
+max-width: 238px;
+text-align: center;
+
+
+  @media (min-width: $tablet-width) {
+    max-width: 278px;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      top: 25px;
+    }
+
+    }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      top: 25px;
+
+    }
+
+  }
+}
+
+.fieldset__legend-comment {
+  &::before {
+    @media (min-width: $tablet-width) {
+      left: -197px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -140%;
+    }
+
+    }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      right: -197px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: -140%;
+
+    }
+
+  }
+}
 
 .fieldset__legend-impress {
   @media (min-width: $tablet-width) {
@@ -182,6 +241,7 @@ input[type=text] {
 
   @media (min-width: $tablet-width) {
     padding-bottom: 31px;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -197,7 +257,6 @@ input[type=text] {
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    width: 100%;
     padding-bottom: 22px;
   }
 
@@ -267,30 +326,48 @@ input[type=text] {
   display: flex;
   flex-direction: column;
   min-height: 206px;
-  justify-content: space-around;
   padding-top: 5px;
-  padding-left: 57px;
   padding-bottom: 41px;
+  position: relative;
+
 
   @media (min-width: $tablet-width) {
     min-width: 324px;
     justify-content: space-between;
     padding-left: 0;
-    padding-top: 47px;
-    padding-bottom: 63px;
+    padding-top: 28px;
+    padding-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
     align-items: flex-start;
-    padding-left: 71px;
+    padding-left: 0;
     padding-right: 84px;
-    padding-bottom: 61px;
+    padding-bottom: 52px;
+  }
+
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      width: 294px;
+      height: 1px;
+      background-color: #dbdbdb;
+      transform: rotate(90deg);
+      top: 30%;
+      left: 55%;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 70%;
+    }
   }
 }
 
 .fieldset__impress-wrapper {
   @media (min-width: $tablet-width) {
-    padding-bottom: 23px;
+    padding-bottom: 9px;
     box-sizing: border-box;
     padding-left: 10px;
   }
@@ -300,17 +377,33 @@ input[type=text] {
 .fieldset__label-places {
   text-transform: none;
   position: relative;
+  padding-left: 70px;
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 22px;
+}
+
+.fieldset__label-places {
+  padding-left: 79px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .fieldset__input-impress + label::before {
   content: "";
   position: absolute;
-  left: -78px;
+  left: -11px;
   width: 55px;
   height: 55px;
   background-color: #f2f2f2;
   border-radius: 50%;
-  top: -15px;
+  top: 8px;
+
+  @media (min-width: $desktop-width) {
+    left: -5px;
+}
 }
 
 .fieldset__input-impress:hover + label::before,
@@ -328,12 +421,16 @@ input[type=text] {
 .fieldset__input-impress:checked + label::after {
   content: "";
   position: absolute;
-  left: -60px;
+  left: 7px;
   width: 22px;
   height: 22px;
   background-color: #333333;
   border-radius: 50%;
-  top: 2px;
+  top: 24px;
+
+  @media (min-width: $desktop-width) {
+    left: 11px;
+}
 }
 
 .fieldset__input-impress:checked:active + label::after
@@ -345,11 +442,8 @@ input[type=text] {
   display: flex;
   flex-direction: column;
   min-height: 297px;
-  justify-content: space-around;
-  padding-top: 21px;
-  padding-left: 78px;
-  padding-bottom: 6px;
-  align-items: baseline;
+  padding-bottom: 30px;
+  align-items: flex-start;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -358,24 +452,25 @@ input[type=text] {
     min-height: 150px;
     padding-left: 175px;
     padding-right: 13px;
-    padding-top: 31px;
-    padding-bottom: 24px;
+    padding-top: 11px;
+    padding-bottom: 43px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 21px;
+    padding-bottom: 40px;
     width: 100%;
     min-height: 87px;
   }
 }
 
 .fieldset__places-wrapper {
-  padding-bottom: 54px;
+  padding-bottom: 10px;
+
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 61px;
+    padding-bottom: 19px;
     min-width: 202px;
     text-align: left;
   }
@@ -395,18 +490,23 @@ input[type=text] {
   height: 16px;
   background: url("../img/icon-tick.svg") no-repeat center;
   top: 5px;
+
 }
 
 .fieldset__input-places + label::before,
 .fieldset__input-places:checked + label::before {
   content: "";
   position: absolute;
-  left: -78px;
+  left: 0;
   width: 56px;
   height: 56px;
   background-color: #f2f2f2;
   border-radius: 5px;
-  top: -15px;
+  top: 7px;
+
+  @media (min-width: $tablet-width) {
+    left: -79px;
+  }
 }
 
 .fieldset__input-places:checked:active + label::before {
@@ -419,7 +519,7 @@ input[type=text] {
 
   @media (min-width: $tablet-width) {
     padding-top: 32px;
-    margin-bottom: 52px;
+    margin-bottom: 51px;
   }
 }
 
@@ -437,8 +537,12 @@ input[type=text] {
   resize: none;
   padding-bottom: 92px;
 
+
   @media (min-width: $tablet-width) {
     width: 100%;
+    padding-bottom: 0;
+    height: 9em;
+    overflow: hidden;
   }
 
   &::placeholder {
