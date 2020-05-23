@@ -15,7 +15,7 @@
     cursor: pointer;
 
     .main-nav__toggle-icon {
-      fill: #81b3d2;
+      fill: $blue;
     }
   }
 
@@ -31,7 +31,7 @@
     cursor: pointer;
 
     .main-nav__toggle-icon {
-      fill: #ffffff;
+      fill: $white;
     }
   }
 }

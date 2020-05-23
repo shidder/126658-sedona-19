@@ -17,8 +17,8 @@
 
 .fieldset__legend {
   padding-bottom: 10px;
-margin-left: auto;
-margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -37,7 +37,7 @@ margin-right: auto;
   display: block;
   padding-top: 16px;
   padding-bottom: 16px;
-  background-color: #f2f2f2;
+  background-color: $grey;
   box-sizing: border-box;
   min-width: 192px;
   padding-left: 21px;
@@ -47,18 +47,17 @@ margin-right: auto;
   }
 }
 
-input[type=text] {
+input[type="text"] {
   box-sizing: border-box;
 
   &:hover,
-  &:focus
- {
-    background-color: #e5e5e5;
+  &:focus {
+    background-color: $input-hover;
   }
 
   &:active {
     background-color: $white;
-    border: 4px solid #e5e5e5;
+    border: 4px solid $input-hover;
   }
 }
 
@@ -69,14 +68,13 @@ input[type=text] {
     position: relative;
   }
 
-
   &::before {
     @media (min-width: $tablet-width) {
       content: "";
       position: absolute;
       width: 123px;
       height: 1px;
-      background-color: #dbdbdb;
+      background-color: $line;
       top: 12px;
       left: -182px;
 
@@ -93,7 +91,7 @@ input[type=text] {
       position: absolute;
       width: 123px;
       height: 1px;
-      background-color: #dbdbdb;
+      background-color: $line;
       top: 12px;
       right: -182px;
     }
@@ -110,11 +108,9 @@ input[type=text] {
   padding-right: 5px;
 }
 
-
 .fieldset__legend-places {
-max-width: 238px;
-text-align: center;
-
+  max-width: 238px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     max-width: 278px;
@@ -125,16 +121,13 @@ text-align: center;
       content: "";
       top: 25px;
     }
-
-    }
+  }
 
   &::after {
     @media (min-width: $tablet-width) {
       content: "";
       top: 25px;
-
     }
-
   }
 }
 
@@ -147,8 +140,7 @@ text-align: center;
     @media (min-width: $desktop-width) {
       left: -140%;
     }
-
-    }
+  }
 
   &::after {
     @media (min-width: $tablet-width) {
@@ -157,9 +149,7 @@ text-align: center;
 
     @media (min-width: $desktop-width) {
       right: -140%;
-
     }
-
   }
 }
 
@@ -311,7 +301,7 @@ text-align: center;
   position: relative;
   right: 0;
   top: 0;
-  background-color: #e6e6e6;
+  background-color: $input-icon;
   width: 58px;
   height: 58px;
 }
@@ -330,7 +320,6 @@ text-align: center;
   padding-bottom: 41px;
   position: relative;
 
-
   @media (min-width: $tablet-width) {
     min-width: 324px;
     justify-content: space-between;
@@ -346,14 +335,13 @@ text-align: center;
     padding-bottom: 52px;
   }
 
-
   &::after {
     @media (min-width: $tablet-width) {
       content: "";
       position: absolute;
       width: 294px;
       height: 1px;
-      background-color: #dbdbdb;
+      background-color: $line;
       transform: rotate(90deg);
       top: 30%;
       left: 55%;
@@ -397,25 +385,25 @@ text-align: center;
   left: -11px;
   width: 55px;
   height: 55px;
-  background-color: #f2f2f2;
+  background-color: $grey;
   border-radius: 50%;
   top: 8px;
 
   @media (min-width: $desktop-width) {
     left: -5px;
-}
+  }
 }
 
 .fieldset__input-impress:hover + label::before,
 .fieldset__input-places:hover + label::before,
-.fieldset__input-places:checked:hover + label::before  {
-  background-color: #e5e5e5;
+.fieldset__input-places:checked:hover + label::before {
+  background-color: $input-hover;
 }
 
 .fieldset__input-impress:active + label::before,
 .fieldset__input-places:active + label::before,
 .fieldset__input-places:checked:active + label::before {
-  background-color: #d5d5d5;
+  background-color: $input-active;
 }
 
 .fieldset__input-impress:checked + label::after {
@@ -424,17 +412,16 @@ text-align: center;
   left: 7px;
   width: 22px;
   height: 22px;
-  background-color: #333333;
+  background-color: $dark-grey;
   border-radius: 50%;
   top: 24px;
 
   @media (min-width: $desktop-width) {
     left: 11px;
-}
+  }
 }
 
-.fieldset__input-impress:checked:active + label::after
- {
+.fieldset__input-impress:checked:active + label::after {
   background-color: rgba(51, 51, 51, 0.3);
 }
 
@@ -468,7 +455,6 @@ text-align: center;
 .fieldset__places-wrapper {
   padding-bottom: 10px;
 
-
   @media (min-width: $tablet-width) {
     padding-bottom: 19px;
     min-width: 202px;
@@ -490,7 +476,6 @@ text-align: center;
   height: 16px;
   background: url("../img/icon-tick.svg") no-repeat center;
   top: 5px;
-
 }
 
 .fieldset__input-places + label::before,
@@ -500,7 +485,7 @@ text-align: center;
   left: 0;
   width: 56px;
   height: 56px;
-  background-color: #f2f2f2;
+  background-color: $grey;
   border-radius: 5px;
   top: 7px;
 
@@ -527,16 +512,15 @@ text-align: center;
   width: 279px;
   font-size: 18px;
   line-height: 26px;
-  color: #000000;
+  color: $black;
   font-weight: 700;
   border: none;
-  background-color: #f2f2f2;
+  background-color: $grey;
   padding-top: 16px;
   box-sizing: border-box;
   padding-left: 20px;
   resize: none;
   padding-bottom: 92px;
-
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -546,6 +530,6 @@ text-align: center;
   }
 
   &::placeholder {
-    color: #000000;
+    color: $black;
   }
 }

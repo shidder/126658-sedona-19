@@ -77,13 +77,13 @@
     }
 
     &:disabled {
-      background-color: #e5e5e5
+      background-color: #e5e5e5;
     }
   }
 }
 
 .search-hotel__btn-result {
-  color: #ffffff;
+  color: $white;
 
   &:active {
     color: $white-active;
