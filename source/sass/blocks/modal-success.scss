@@ -13,11 +13,6 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-  }
-}
-
-.modal-success__title {
-  @media (min-width: $tablet-width) {
     line-height: 26px;
   }
 }
@@ -28,9 +23,7 @@
   padding-left: 44px;
   padding-right: 45px;
   padding-bottom: 38px;
-}
 
-.modal-success__desc {
   @media (min-width: $tablet-width) {
     padding-left: 112px;
     padding-right: 114px;
