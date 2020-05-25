@@ -137,6 +137,16 @@
   @media (min-width: $desktop-width) {
     max-width: 480px;
     padding-left: 78px;
+
+    &:hover,
+    &:focus {
+      background-color: $btn-hover;
+    }
+
+    &:active {
+      background-color: $btn-active;
+      color: $white-active;
+    }
   }
 }
 

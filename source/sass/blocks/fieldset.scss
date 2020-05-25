@@ -29,7 +29,7 @@
 .fieldset__label {
   padding-top: 17px;
   line-height: 26px;
-  padding-right: 13px;
+  padding-right: 12px;
 }
 
 .fieldset__input {
@@ -101,11 +101,6 @@ input[type="text"] {
       right: -120%;
     }
   }
-}
-
-.fieldset__legend-contacts {
-  padding-left: 0;
-  padding-right: 5px;
 }
 
 .fieldset__legend-places {
@@ -244,6 +239,7 @@ input[type="text"] {
   display: flex;
   flex-wrap: wrap;
   position: relative;
+ width: 280px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -254,6 +250,7 @@ input[type="text"] {
   @media (min-width: $desktop-width) {
     flex-direction: row;
     align-items: center;
+    flex-wrap: nowrap;
   }
 }
 
@@ -283,6 +280,11 @@ input[type="text"] {
 .fieldset__input-phone-wrap,
 .fieldset__input-mail-wrap {
   display: flex;
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    max-width: 320px;
+  }
 }
 
 .fieldset__input-phone,
@@ -412,7 +414,10 @@ input[type="text"] {
 
 .fieldset__input-impress:hover + label::before,
 .fieldset__input-places:hover + label::before,
-.fieldset__input-places:checked:hover + label::before {
+.fieldset__input-places:checked:hover + label::before,
+.fieldset__input-impress:focus + label::before,
+.fieldset__input-places:focus + label::before,
+.fieldset__input-places:checked:focus + label::before {
   background-color: $input-hover;
 }
 
