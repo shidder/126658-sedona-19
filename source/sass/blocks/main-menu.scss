@@ -8,7 +8,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
     background-color: $white;
   }
 }
@@ -33,12 +33,13 @@
 
   @media (min-width: $tablet-width) {
     box-shadow: none;
-    width: 25%;
+    width: 152px;
     padding-top: 7px;
     padding-bottom: 9px;
 
-    &:nth-child(3) {
-      margin-left: 157px;
+
+    &:nth-child(4n+3) {
+      margin-left: 160px;
     }
 
     &:hover,
@@ -52,8 +53,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    &:nth-child(3) {
-      margin-left: 237px;
+    width: 239px;
+
+    &:nth-child(4n+3) {
+      margin-left: 244px;
     }
   }
 }

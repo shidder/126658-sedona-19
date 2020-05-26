@@ -47,9 +47,9 @@
   }
 }
 
-input[type="text"] {
-  box-sizing: border-box;
-
+.fieldset__input-name,
+.fieldset__input-phone,
+.fieldset__input-mail {
   &:hover,
   &:focus {
     background-color: $input-hover;
@@ -57,7 +57,7 @@ input[type="text"] {
 
   &:active {
     background-color: $white;
-    border: 4px solid $input-hover;
+    outline: 4px solid $input-hover;
   }
 }
 
