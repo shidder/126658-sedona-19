@@ -230,7 +230,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-wrap: nowrap;
     padding-top: 48px;
   }
 }
@@ -251,6 +250,7 @@
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
+    max-width: 480px;
   }
 }
 
